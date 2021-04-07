@@ -14,6 +14,7 @@
 
 # production
 /build
+db_favoritesDB
 
 # misc
 .DS_Store

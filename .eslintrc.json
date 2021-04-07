@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:promise/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:styled-components-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "promise",
+    "unicorn",
+    "styled-components-a11y"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "unicorn/prevent-abbreviations": "off",
+    "no-warning-comments": [
+      1,
+      { "terms": ["todo", "fixme"], "location": "anywhere" }
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "no-void": [2, { "allowAsStatement": true }],
+    "@typescript-eslint/no-floating-promises": [2, { "ignoreVoid": true }]
+  }
+}

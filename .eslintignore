@@ -1,0 +1,4 @@
+next.config.js
+pages/api/video.js
+node_modules/**
+.next/**
