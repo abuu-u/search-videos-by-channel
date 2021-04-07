@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import { loadFavorites, selectFavorites } from '../lib/slices/video-slice';
 import { useAppDispatch } from '../src/store';
 

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case */
 /* eslint-disable styled-components-a11y/anchor-is-valid */
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
